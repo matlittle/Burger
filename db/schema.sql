@@ -3,8 +3,8 @@ CREATE DATABASE burgers_db;
 USE burgers_db;
 
 CREATE TABLE burgers (
-    id INTEGER AUTO INCREMENT,
-    PRIMARY KEY(id),
+    id INT AUTO_INCREMENT NOT NULL,
     burger_name VARCHAR(50),
-    devoured BOOLEAN SET DEFAULT false
+    devoured BOOLEAN DEFAULT false,
+    PRIMARY KEY(id)
 );
