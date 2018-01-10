@@ -22,6 +22,7 @@ router.post("/api/new", (req, res) => {
     burger.insertNewBurger(req.body.name).then(data => {
         console.log("'/api/new' response =====================");
         console.log(data);
+        console.log(req.body.name);
         res.redirect("/");
     }).catch(err => {
         console.log(err);
